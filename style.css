@@ -1,0 +1,186 @@
+*{
+font-family:Barlow Semi Condensed;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 13px;
+  background-color: rgb(237 242 248);
+  gap: 26px;
+}
+
+main{
+  width: 80%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.testimonial {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profilehead{
+  align-items: center;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  gap: 20px;
+}
+
+.profile{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.testimonial img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.testimonial h3 {
+  margin: 10px 0 5px;
+}
+
+.testimonial span {
+  color: #aaa;
+  opacity:0.5;
+  font-size: 14px;
+}
+
+.testimonial h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.testimonial p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-style: normal;
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.daniel {
+  grid-column: span 2;
+  background-color:hsl(263, 55%, 52%);
+  color: #fff;
+}
+
+.daniel h2, .daniel p {
+  color: #fff;
+}
+
+.daniel ::after{
+  content: "";
+  background-image: url('testimonials-grid-section-main/images/bg-pattern-quotation.svg');
+  position: absolute;
+  top: -60px;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+}
+
+.jonathan h2, .jonathan p {
+  color: #fff;
+}
+
+.kira {
+height:auto;
+
+padding-left: 40px;
+grid-row: span 2;
+background-color: #fff;
+color:#535866;
+}
+
+.kira h2, .kira p {
+  color: rgb(83 88 102);
+}
+
+.kira p{
+margin-top:20px; 
+}
+
+.jeanette {
+  background-color: #fff;
+  color:rgb(83 88 102)
+}
+
+.jeanette h2, .jeanette p {
+  color: rgb(83 88 102);
+}
+
+.jeanette p{
+margin-top:20px; 
+}
+
+.patrick {
+  grid-column: span 2;
+  background-color:hsl(219, 29%, 14%);
+  color: #fff;
+}
+
+.patrick h2, .patrick p {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .daniel {
+      grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      grid-template-columns: 1fr;
+  }
+
+  .daniel, .jonathan, .jeanette, .patrick, .kira {
+      grid-column: span 1;
+  }
+
+  .daniel {
+      order: 1;
+  }
+
+  .jonathan {
+      order: 2;
+  }
+
+  .jeanette {
+      order: 3;
+  }
+
+  .patrick {
+      order: 4;
+  }
+
+  .kira {
+      order: 5;
+  }
+}
