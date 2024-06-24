@@ -85,17 +85,6 @@ main{
   color: #fff;
 }
 
-.daniel ::after{
-  content: "";
-  background-image: url('./images/bg-pattern-quotation.svg');
-  position: absolute;
-  top: -60px;
-  right: 10%;
-  width: 100px;
-  height: 100px;
-  z-index: -1;
-}
-
 .jonathan {
   background-color: hsl(217, 19%, 35%);
   color: #fff;
