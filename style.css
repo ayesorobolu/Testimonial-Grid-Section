@@ -87,7 +87,7 @@ main{
 
 .daniel ::after{
   content: "";
-  background-image: url('testimonials-grid-section-main/images/bg-pattern-quotation.svg');
+  background-image: url('./images/bg-pattern-quotation.svg');
   position: absolute;
   top: -60px;
   right: 10%;
